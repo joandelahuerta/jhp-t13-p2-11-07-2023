@@ -1,0 +1,28 @@
+body{
+    background-color: #F5F5F5;
+}
+.title{
+    color: #40A1F9;
+}
+.maincontainer{
+    position: flex;
+    max-width: 670px;
+}
+.contatuscontainer{
+    max-width: 670px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.message{
+    height: 180px;
+    margin-bottom: 10px;
+}
+.loginbutton{
+    background-color: #40A1F9;
+    border-radius: 5px;
+    color: white;
+    max-width: 100px;
+}

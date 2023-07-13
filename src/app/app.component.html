@@ -1,0 +1,53 @@
+<div class="container text-center">
+  <!-- Titulo -->
+  <div class="row text-center">
+      <h1 class="title">Contact us</h1>
+  </div>
+  <!-- Todos los inputs -->
+  <div class="container-fluid contactusmcontainer">
+      <div class="row">
+          <div class="col">
+              <p>Nombre:</p>
+          </div>
+          <div class="col-10">
+              <input type="text" class="form-control" aria-describedby="basic-addon1" [(ngModel)]="nombre">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+              <p>Email:</p>
+          </div>
+          <div class="col-10">
+              <input type="text" class="form-control" aria-describedby="basic-addon1" [(ngModel)]="email">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+              <p>Mensaje:</p>
+          </div>
+          <div class="col-10">
+            <!-- Textarea para que sea mas grande -->
+            <textarea type="text" class="form-control message text-start" aria-describedby="basic-addon1" [(ngModel)]="mensaje"></textarea>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+              <p>2+3=?</p>
+          </div>
+          <div class="col-10">
+              <input type="text" class="form-control" aria-describedby="basic-addon1" [(ngModel)]="verificar">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col text-center">
+              <button type="button" class="btn socialbutton">
+                  <button type="button" class="btn loginbutton" (click)="addFormulario()">Submit</button>
+              </button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+<app-formulario [data]="formulario"></app-formulario>
